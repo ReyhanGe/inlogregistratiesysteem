@@ -11,11 +11,39 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-
-    <title>Hello, world!</title>
+    <title>Schoenen!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <main>
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <?php include("./banner.php"); ?>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <?php include("./navbar.php"); ?>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <?php include("./content.php"); ?>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <?php include("./footer.php"); ?>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

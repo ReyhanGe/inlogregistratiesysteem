@@ -1,0 +1,19 @@
+{
+  "name": "schoenen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "testing123"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReyhanGe/inlogregistratiesysteem.git"
+  },
+  "author": "Reyhan Ged",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReyhanGe/inlogregistratiesysteem/issues"
+  },
+  "homepage": "https://github.com/ReyhanGe/inlogregistratiesysteem#readme"
+}
