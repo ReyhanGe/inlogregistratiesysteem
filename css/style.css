@@ -1,3 +1,10 @@
 body{
     background-color: rgb(221, 211, 199);
 }
+#footer {
+    min-height: 4em;
+    background-color: rgb(175, 129, 129);
+    color: antiquewhite;
+    text-align: center;
+    font-weight: bolder;
+}

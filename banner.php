@@ -1,1 +1,1 @@
-   <img src=".\img\knippschoenen.png" alt="shoenenwall" class="img-fluid">
+   <img src=".\img\knippschoenen.png" alt="shoenenwall" class="img-fluid w-100">
