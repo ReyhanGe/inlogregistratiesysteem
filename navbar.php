@@ -1,9 +1,5 @@
 <?php
-  if (isset($_GET["content"])) {
-    $active = $_GET["content"];
-   } else {
-    $active = "";
-   }
+  $active = (isset($_GET["content"]))? $_GET["content"]: "";
 ?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
@@ -14,22 +10,23 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item ">
-          <a class="nav-link <?php if ( $active == "home" ) { echo "active"; } ?>" aria-current="page" href="./index.php?content=home">home</a>
+          <a class="nav-link <?php echo (in_array($active, ["home", ""]))? "active": "" ?>" aria-current="page" href="./index.php?content=home">home</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link <?php if ( $active == "dames" ) { echo "active"; } ?>" href="./index.php?content=dames">dames</a>
+          <a class="nav-link <?php echo ($active == "dames" )? "active": "" ?>" href="./index.php?content=dames">dames</a>
+           
         </li>
         <li class="nav-item ">
-          <a class="nav-link <?php if ( $active == "heren" ) { echo "active"; } ?>" href="./index.php?content=heren">heren</a>
+          <a class="nav-link <?php echo ($active == "heren" )? "active": "" ?>" href="./index.php?content=heren">heren</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle <?php echo ( in_array($active,["puma", "nike", "adidas"]))? "active": "" ?>" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             merk
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Puma</a></li>
-            <li><a class="dropdown-item" href="#">Nike</a></li>
-            <li><a class="dropdown-item" href="#">Adidas</a></li>
+            <li><a class="dropdown-item <?php echo ( $active == "puma" )? "active": "" ?>" href="./index.php?content=puma">puma</a></li>
+            <li><a class="dropdown-item <?php echo ( $active == "nike" )? "active": "" ?>" href="./index.php?content=nike">nike</a></li>
+            <li><a class="dropdown-item <?php echo ( $active == "adidas" )? "active": "" ?>" href="./index.php?content=adidas">adidas</a></li>
           </ul>
         </li>
       </ul>
