@@ -1,3 +1,10 @@
+<?php
+  if (isset($_GET["content"])) {
+    $active = $_GET["content"];
+   } else {
+    $active = "";
+   }
+?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="./index.php">Schoenen</a>
@@ -6,14 +13,14 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index.php?content=home">home</a>
+        <li class="nav-item ">
+          <a class="nav-link <?php if ( $active == "home" ) { echo "active"; } ?>" aria-current="page" href="./index.php?content=home">home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./dames.php">dames</a>
+        <li class="nav-item ">
+          <a class="nav-link <?php if ( $active == "dames" ) { echo "active"; } ?>" href="./index.php?content=dames">dames</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./heren.php">heren</a>
+        <li class="nav-item ">
+          <a class="nav-link <?php if ( $active == "heren" ) { echo "active"; } ?>" href="./index.php?content=heren">heren</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -29,3 +36,5 @@
     </div>
   </div>
 </nav>
+
+

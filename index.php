@@ -32,7 +32,7 @@
       <section class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <?php include("./home.php"); ?>
+            <? php include("./content.php"); ?>
           </div>
         </div>
       </section>
