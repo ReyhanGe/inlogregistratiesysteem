@@ -30,6 +30,14 @@
           </ul>
         </li>
       </ul>
+      <ul class= "navbar-nav mx-auto">
+        <li class="nav-item ">
+          <a class="nav-link <?php echo ( $active == "registreer")? "active": "" ?>" aria-current="page" href="./index.php?content=registreer">registreer</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link <?php echo ($active == "login" )? "active": "" ?>" href="./index.php?content=login">inloggen</a>  
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
