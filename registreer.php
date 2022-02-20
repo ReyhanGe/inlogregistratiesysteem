@@ -7,6 +7,7 @@
                 <input name="email" type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
                 <div id="emailHelp" class="form-text">Uw privacy is gegarandeerd...</div>
               </div>              
+              
              <!-- <button type="submit" class="btn btn-primary btn-lg btn-block" >Registreer</button> -->
               <div class="d-grid gap-2">
                 <button type="submit" class="btn btn-primary btn-lg btn-block btn-outline-secondary" >Registreer</button>
