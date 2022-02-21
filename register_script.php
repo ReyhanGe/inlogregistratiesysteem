@@ -28,6 +28,17 @@
 
             if (mysqli_query($conn, $sql)) {
                 // e-mail versturen
+                $to = $email;
+                $subject = "Activatielink voor uw account van inlogregistratiesysteem.org";
+                $message = "Dit is test";
+                $headers = "From: admin@inlogregistratiesysteem.org\r\n";
+                $headers .= "Cc: moderator@inlogregistratiesysteem.org\r\n";
+                $headers .= "Bcc: root@inlogregistratiesysteem.org";
+
+
+                mail($to, $subject, $message, $headers);
+
+
                header("Location: ./index.php?content=message&alert-register-success");
             }  else {
                header("Location: ./index.php?content=message&alert=register-error");
