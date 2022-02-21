@@ -75,9 +75,7 @@
                 $headers .= "Cc: moderator@inlogregistratiesysteem.org\r\n";
                 $headers .= "Bcc: root@inlogregistratiesysteem.org";
 
-
                 mail($to, $subject, $message, $headers);
-
 
                header("Location: ./index.php?content=message&alert-register-success");
             }  else {

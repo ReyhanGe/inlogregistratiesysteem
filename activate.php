@@ -23,13 +23,12 @@
               <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
               <input type="hidden" name="pwh" value="<?php echo $_GET["pwh"]; ?>">
 
-              <div class="d-grid gap-2"><button type="submit" class="btn btn-info btn-lg btn-block btn-outline-warning">Activeer</button></div>
-            
+              <div class="d-grid gap-2"><button type="submit" class="btn btn-info btn-lg btn-block btn-outline-warning">Activeer</button></div>            
 
             </form>
         </div>
         <div class="col-12 col-sm-6">
-            <img src="img\animeshoe.jpeg" alt="shoe" class="w-75 mx-auto d-block ">
+            <img src="img\animeshoees.jpg" alt="shoe" class="w-75 mx-auto d-block ">
         </div>
     </div>    
 </div>

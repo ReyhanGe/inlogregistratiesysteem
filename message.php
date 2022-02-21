@@ -37,6 +37,5 @@
         default:
             header("Location: ./index.php?content=home");
         break;
-    }
-    
+    }    
 ?>
