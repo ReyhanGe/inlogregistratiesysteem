@@ -54,7 +54,7 @@
                                 <body>
                                     <h2>Beste Gebruiker,</h2>
                                     <p>U heeft zich onlangs geregistreerd voor de site http://www.inlogregistratiesysteem.org</p>
-                                    <p>Klik <a href="http://www.inlogregistratiesysteem.org/index.php?content=activate&id= ' . $id . '& pwh=' . $password_hash . '"> hier </a> voor het activeren en wijzigen van het wachtwoord van uw account</p>
+                                    <p>Klik <a href="http://www.inlogregistratiesysteem.org/index.php?content=activate&id='. $id.'&pwh='.$password_hash.'"> hier </a> voor het activeren en wijzigen van het wachtwoord van uw account</p>
                                     <p>Bedankt voor het registreren</p>
                                     <p>Met vriendelijke groet,</p>
                                     <p>Reyhan G.</p>
