@@ -58,7 +58,7 @@
                                     <p>Bedankt voor het registreren</p>
                                     <p>Met vriendelijke groet,</p>
                                     <p>Reyhan G.</p>
-                                    <p>CEO Shoenen INC.</p>
+                                    <p>CEO Schoenen INC.</p>
 
 
                                     <!-- Optional JavaScript; choose one of the two! -->
@@ -66,20 +66,20 @@
                                     <!-- Option 1: Bootstrap Bundle with Popper -->
                                     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
                                 
-                  </body>
-                </html>';
+                                </body>
+                            </html>';
 
-                $headers = "MIME-Version: 1.0\r\n";
-                $headers .= "Content-type: text/html; charset=UTF-8\r\n";
-                $headers .= "From: admin@inlogregistratiesysteem.org\r\n";
-                $headers .= "Cc: moderator@inlogregistratiesysteem.org\r\n";
-                $headers .= "Bcc: root@inlogregistratiesysteem.org";
+                 $headers = "MIME-Version: 1.0\r\n";
+                 $headers .= "Content-type: text/html; charset=UTF-8\r\n";
+                 $headers .= "From: admin@inlogregistratiesysteem.org\r\n";
+                 $headers .= "Cc: moderator@inlogregistratiesysteem.org\r\n";
+                 $headers .= "Bcc: root@inlogregistratiesysteem.org";
 
-                mail($to, $subject, $message, $headers);
+                 mail($to, $subject, $message, $headers);
 
-               header("Location: ./index.php?content=message&alert-register-success");
-            }  else {
-               header("Location: ./index.php?content=message&alert=register-error");
+                header("Location: ./index.php?content=message&alert=registreer-success"); //re?
+             }  else {
+                header("Location: ./index.php?content=message&alert=registreer-error");
             }
         }
     }

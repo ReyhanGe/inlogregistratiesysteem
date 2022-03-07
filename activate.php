@@ -10,13 +10,13 @@
             <form action="./index.php?content=activate_script" method="post">
               <div class="mb-3">
                 <label for="inputPassword" class="form-label">Kies een nieuwe wachtwoord:</label>
-                <input name="email" type="password" class="form-control" id="inputPassword" aria-describedby="passwordHelp">
+                <input name="password" type="password" class="form-control" id="inputPassword" aria-describedby="passwordHelp">
                 <div id="passwordHelp" class="form-text">Kies een veilig wachtwoord...</div>
               </div>   
               
               <div class="mb-3">
               <label for="inputPasswordCheck">Type het wachtwoord opnieuw:</label>
-                <input name="emailCheck" type="password" class="form-control" id="inputPassword" aria-describedby="passwordHelpCheck">
+                <input name="passwordCheck" type="password" class="form-control" id="inputPassword" aria-describedby="passwordHelpCheck">
                 <div id="passwordHelpCheck" class="form-text">Ter controle voert u nogmaals uw wachtwoord in...</div>
               </div>
 
@@ -32,3 +32,4 @@
         </div>
     </div>    
 </div>
+
