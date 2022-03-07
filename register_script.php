@@ -77,9 +77,9 @@
 
                  mail($to, $subject, $message, $headers);
 
-                header("Location: ./index.php?content=message&alert=registreer-success"); //re?
+                header("Location: ./index.php?content=message&alert=register-success"); 
              }  else {
-                header("Location: ./index.php?content=message&alert=registreer-error");
+                header("Location: ./index.php?content=message&alert=register-error");
             }
         }
     }
