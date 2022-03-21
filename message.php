@@ -71,6 +71,14 @@
             header("Refresh: 3; ./index.php?content=activate&id=$id&pwh=$pwh");
         break;
 
+
+        case "already-active" :
+            echo '<div class="alert alert-danger mt-5 w-50 mx-auto" role="alert">
+                    Uw account is al actief, log in met uw zelfgekozen wachtwoord en emailadres.
+                   </div>';
+            header("Refresh: 3; ./index.php?content=activate&id=$id&pwh=$pwh");
+        break;
+
         default:
             header("Location: ./index.php?content=home");
         break;
