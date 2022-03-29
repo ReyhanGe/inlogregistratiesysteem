@@ -45,10 +45,10 @@ $message = '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http:
                    width="100%" bgcolor="#F1F1F1" style="mso-line-height-rule: exactly; outline: 0; width: 100%; min-width: 100%; height: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: Helvetica, Arial, sans-serif; line-height: 24px; font-weight: normal; font-size: 16px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; color: #000000; margin: 0; padding: 0; border-width: 0;">
                     <table class="body" valign="top" role="presentation" border="0" cellpadding="0" cellspacing="0" style="outline: 0; width: 100%; min-width: 100%; height: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: Helvetica, Arial, sans-serif; line-height: 24px; font-weight: normal; font-size: 16px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; color: #000000; margin: 0; padding: 0; border-width: 0;" bgcolor="#ffffff">
                       <tbody>
-                <tr>
-                      <td style="border-spacing: 0px; border-collapse: collapse; line-height: 24px; font-size: 16px; margin: 0;"
-                      align="left">'. $array["date"] . ' - ' . $array["time"] .'</td>
-                </tr>
+          <tr>
+             <td style="border-spacing: 0px; border-collapse: collapse; line-height: 24px; font-size: 16px; margin: 0;"
+                      align="left">' . $array["date"] . ' - ' . $array["time"] . '</td>
+          </tr>
 
 
                           <td valign="top" style="line-height: 24px; font-size: 16px; margin: 0;" align="left">
@@ -65,8 +65,7 @@ $message = '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http:
                                         </tr>
                                       </table>
                                       
-  <td style="border-spacing: 0px; border-collapse: collapse; line-height: 24px; font-size: 16px; margin: 0;"
-  align="left">'. $array["date"] . ' - ' . $array["time"] .'</td>
+ 
 
                                     
                                   <tr>
@@ -95,7 +94,7 @@ $message = '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http:
                                                     <center>
                                                       <table role="presentation" align="center" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow" style="text-align: center; margin: 0 auto;">
                                                         <tr>
-                                                          <td style="border-radius: 50px; line-height: 24px; font-size: 16px; margin: 0;" class="button-td" align="center" bgcolor="#26a4d3"> <a href="http://www.inlogregistratiesysteem.org/index.php?content=activate&id='. $id.'&pwh='.$array['password_hash'].'" style="color: #0d6efd;"> <span style="color: #ffffff;" class="button-link"> Hier </span> </td>
+                                                          <td style="border-radius: 50px; line-height: 24px; font-size: 16px; margin: 0;" class="button-td" align="center" bgcolor="#26a4d3"> <a href="http://www.inlogregistratiesysteem.org/index.php?content=activate&id=' . $id . '&pwh=' . $array['password_hash'] . '" style="color: #0d6efd;"> <span style="color: #ffffff;" class="button-link"> Hier </span> </td>
                                                         </tr>
                                                       </table>
                                                     </center>
@@ -180,5 +179,4 @@ $message = '<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http:
                   </body>
                 </html>
                 ';
-                
 ?>
