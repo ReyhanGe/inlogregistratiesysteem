@@ -1,10 +1,13 @@
 a-home
 <?php
-  session_start();
   var_dump ($_SESSION);
 
   // unset($_SESSION["id"]);
   // unset($_SESSION["userrole"]);
+  echo session_id();
+  echo "<hr>";
+
+  // session_unset();
   // session_destroy();
 
 
