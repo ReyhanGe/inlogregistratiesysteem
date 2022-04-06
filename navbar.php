@@ -30,7 +30,7 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
           </ul>
         </li>
       </ul>
-      <ul class="navbar-nav mx-auto">
+      <ul class="navbar-nav ms-auto ">
 
         <?php
         if (isset($_SESSION["id"])) {

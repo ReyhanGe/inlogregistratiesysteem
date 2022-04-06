@@ -44,6 +44,9 @@ if (empty($_POST["email"])) {
             $headers .= "Cc: moderator@inlogregistratiesysteem.org\r\n";
             $headers .= "Bcc: root@inlogregistratiesysteem.org";
 
+           //  echo $message;
+            // header("Refresh:6; url=./index.php?content?messa.....");
+
             mail($to, $subject, $message, $headers);
 
             header("Location: ./index.php?content=message&alert=register-success");
