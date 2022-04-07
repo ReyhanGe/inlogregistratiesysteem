@@ -10,7 +10,7 @@ if (!(isset($_GET["content"]) && isset($_GET["id"]) && isset($_GET["pwh"]))) {
       <form action="./index.php?content=activate_script" method="post">
         <div class="mb-3">
           <label for="inputPassword" class="form-label">Kies een nieuwe wachtwoord:</label>
-          <input name="password" type="password" class="form-control" id="inputPassword" aria-describedby="passwordHelp">
+          <input name="password" type="password" class="form-control" id="inputPassword" aria-describedby="passwordHelp" autofocus>
           <div id="passwordHelp" class="form-text">Kies een veilig wachtwoord...</div>
         </div>
 

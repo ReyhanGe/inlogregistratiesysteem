@@ -20,6 +20,3 @@
     </div>
   </div>
 </div>
-
-<!-- <img src="img\ayaknnaı.jpg" alt="ayakkanı">
--->
